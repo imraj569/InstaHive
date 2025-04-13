@@ -12,8 +12,7 @@ import instaloader
 from DataBase.features import *
 from colorama import Fore
 
-# Suppress instaloader noisy logs
-instaloader.logger.setLevel(logging.CRITICAL)
+logging.basicConfig(level=logging.CRITICAL)
 
 def get_latest_version():
     version_url = "https://raw.githubusercontent.com/imraj569/InstaHive/main/version.txt"
